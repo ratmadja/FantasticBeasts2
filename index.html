@@ -29,8 +29,10 @@
   <div class="container">
     <main>
       <header>
-        <nav>
-          <img class="movie-logo" src="assets/logo_fantasticbeasts2.png">
+        <nav class="fixed-nav">
+          <div class="nav-logo">
+            <img class="logo" src="assets/logo_fantasticbeasts2.png">
+          </div>
           <ul class="nav-menu">
             <li><a href="#">Story</a></li>
             <li><a href="#">Video</a></li>
@@ -39,26 +41,25 @@
           </ul>
         </nav>
         <div class="hero-content">
-          <video class="videoloop-hero" src="assets/video/loopcharacters.mp4"
-          autoplay="true" loop="true"></video>
+          <video class="video-hero" src="assets/video/FB2-clip-magiclooms.mp4" autoplay="true"></video>
         </div>
       </header>
 
       <section class="Story">
         <div class="container-text">
-          <h1 class="section-title">Story</h1>
           <p>At the end of the first film, the powerful Dark wizard Gellert Grindelwald (Johnny Depp) was captured by MACUSA (Magical Congress of the United States of America), with the help of Newt Scamander (Eddie Redmayne).  But, making good on his threat, Grindelwald escaped custody and has set about gathering followers, most unsuspecting of his true agenda: to raise pure-blood wizards up to rule over all non-magical beings.</p>
           <p>In an effort to thwart Grindelwald’s plans, Albus Dumbledore (Jude Law) enlists his former student Newt Scamander, who agrees to help, unaware of the dangers that lie ahead.  Lines are drawn as love and loyalty are tested, even among the truest friends and family, in an increasingly divided wizarding world.</p>
         </div>
       </section>
 
       <section class="Trailers">
+        <!-- <h1 class="section-title">Official Trailers</h1> -->
         <ul class="nav-trailer">
           <li><a href="#">OFFICIAL TRAILER 1</a></li>
           <li><a href="#">OFFICIAL COMIC CON TRAILER </a></li>
           <li><a href="#">FIRST LOOK</a></li>
         </ul>
-        <iframe width="100%" height="600" src="https://www.youtube.com/embed/vvFybpmyB9E" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <iframe class="trailer-embed" src="https://www.youtube.com/embed/vvFybpmyB9E" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
       </section>
 
 
@@ -66,19 +67,29 @@
         <h1 class="section-title">Gallery</h1>
         <div class="container-gallery">
           <div class="portrait"><img src="assets/images/portrait2.png"></div>
+          <div class="landscape"><img src="assets/gif/one.gif"></div>
           <div class="landscape"><img src="assets/images/landscape1.jpg"></div>
           <div class="portrait"><img src="assets/images/portrait3.jpg"></div>
+          <div class="landscape"><img src="assets/gif/six.gif"></div>
           <div class="fit"><img src="assets/images/square1.jpg"></div>
+          <div class="portrait"><img src="assets/gif/five.gif"></div>
           <div class="portrait"><img src="assets/images/portrait1.jpg"></div>
           <div class="landscape"><img src="assets/images/landscape4.jpg"></div>
+          <div class="landscape"><img src="assets/gif/three.gif"></div>
           <div class="fit"><img src="assets/images/landscape2.jpg"></div>
         </div>
       </section>
 
       <section class="CTA">
-        <h1 class="section-title">Wands Ready</h1>
-        <p>Coming Soon</p>
-      </section>
+
+        <h1 class="cta-tagline">Who will change the future?</h1>
+        <div class="cta-videoContainer">
+          <div class="cta-button">
+            <p class="cta-button-text">Mark Your Calendars</p>
+          </div>
+          <video class="video-footer" src="assets/video/FB2-clip-characters.mp4" autoplay="true" loop="true" ></video>
+        </div>
+        </section>
 
     </main>
   </div>
