@@ -10,25 +10,98 @@
   <link rel="icon" type="image/png" href="assets/ra-favicon.png">
   <!-- Reset.css -->
   <link rel="stylesheet" href="css/reset.css">
-  <!-- master.css -->
+  <!-- css -->
   <link rel="stylesheet" href="css/master.css">
-  <!-- font -->
-  <link rel="stylesheet" href="assets/typography/Animales Fantastic.otf">
+  <link rel="stylesheet" href="css/player-bar.css">
   <!-- google fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Spectral:500,600" rel="stylesheet">
-  <!-- Font Awesome -->
+  <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Eczar" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Fira+Mono" rel="stylesheet">
+  <!-- fanastic animales font -->
+  <link rel="stylesheet" href="assets/typography/Animales Fantastic.otf">
+  <!-- Font Awesome, ionic framework, cloudflare -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css">
 </head>
+
 <body>
   <div class="container">
     <main>
       <header>
-        <div class="fullscreen-video-wrap">
-            <video src="assets/FB2-trailer.mp4" autoplay="true" loop="true">
-            </video>
+        <nav>
+          <img class="movie-logo" src="assets/logo_fantasticbeasts2.png">
+          <ul class="nav-menu">
+            <li><a href="#">Story</a></li>
+            <li><a href="#">Video</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Wands Ready</a></li>
+          </ul>
+        </nav>
+        <div class="hero-content">
+          <video class="videoloop-hero" src="assets/video/loopcharacters.mp4"
+          autoplay="true" loop="true"></video>
         </div>
-        <h4>#Fantastic<h4>
       </header>
+
+      <section class="Story">
+        <div class="container-text">
+          <h1 class="section-title">Story</h1>
+          <p>At the end of the first film, the powerful Dark wizard Gellert Grindelwald (Johnny Depp) was captured by MACUSA (Magical Congress of the United States of America), with the help of Newt Scamander (Eddie Redmayne).  But, making good on his threat, Grindelwald escaped custody and has set about gathering followers, most unsuspecting of his true agenda: to raise pure-blood wizards up to rule over all non-magical beings.</p>
+          <p>In an effort to thwart Grindelwald’s plans, Albus Dumbledore (Jude Law) enlists his former student Newt Scamander, who agrees to help, unaware of the dangers that lie ahead.  Lines are drawn as love and loyalty are tested, even among the truest friends and family, in an increasingly divided wizarding world.</p>
+        </div>
+      </section>
+
+      <section class="Trailers">
+        <ul class="nav-trailer">
+          <li><a href="#">OFFICIAL TRAILER 1</a></li>
+          <li><a href="#">OFFICIAL COMIC CON TRAILER </a></li>
+          <li><a href="#">FIRST LOOK</a></li>
+        </ul>
+        <video class="video-trailer" src="assets/video/FB2-trailer1.mp4" >
+        </video>
+        <!-- Player Bar  -->
+        <section id="player-bar">
+          <section id="buttons">
+            <!-- Play Button  -->
+            <button id="play-pause">
+              <span class="ion-play"></span>
+              <span class="ion-pause"></span>
+            </button>
+          </section>
+          <!-- Time Control  -->
+          <section id="time-control">
+            <div class="current-time">–:––</div>
+            <input type="range" class="seek-bar" value="0">
+            <div class="total-time">–:––</div>
+          </section>
+          <!-- Volume Control  -->
+          <div id="volume-control">
+            <div class="icon ion-volume-low"></div>
+            <input type="range" class="seek-bar" value="80">
+            <div class="icon ion-volume-high"></div>
+          </div>
+        </section>
+      </section>
+
+      <section class="Gallery">
+        <h1 class="section-title">Gallery</h1>
+        <div class="container-gallery">
+          <div class="portrait"><img src="assets/images/portrait2.png"></div>
+          <div class="landscape"><img src="assets/images/landscape1.jpg"></div>
+          <div class="portrait"><img src="assets/images/portrait3.jpg"></div>
+          <div class="fit"><img src="assets/images/square1.jpg"></div>
+          <div class="portrait"><img src="assets/images/portrait1.jpg"></div>
+          <div class="landscape"><img src="assets/images/landscape4.jpg"></div>
+          <div class="fit"><img src="assets/images/landscape2.jpg"></div>
+        </div>
+      </section>
+
+      <section class="CTA">
+        <h1 class="section-title">Wands Ready</h1>
+        <p>Coming Soon</p>
+      </section>
+
     </main>
   </div>
 </body>

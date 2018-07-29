@@ -8,7 +8,7 @@ html, .root {
 }
 
 body {
-  font-family: 'Animales Fantastic', serif;
+  font-family: 'Cinzel', serif;
   font-size: 1em;
   line-height: 1.5em;
   color: #ffffff;
@@ -27,11 +27,155 @@ body {
   max-width: 1280px;
 }
 
-video {
-  margin-top: -5%;
+/* Start of nav-styling */
+
+nav {
+  /* border: 1px solid white; */
+  background-color: hsla(343, 100%, 100%, 0);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 1;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.movie-logo {
+  /* border: 1px solid white; */
+  width: 25%;
+  height: 25%;
+}
+
+.nav-menu {
+  /* border: 1px solid white; */
+  display: flex;
+}
+
+.nav-menu li {
+  display: flex;
+  align-items: center;   /*Centers Menu items*/
+  margin: 0em 1em;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: hsla(343, 100%, 100%, 0.6);
+}
+
+.nav-menu a:hover {
+  color: rgb(169, 151, 118);
+}
+
+/* End of nav-styling */
+
+
+/* Start of hero-styling */
+
+.hero-content {
+  margin-top: 10%;
+}
+
+.section-title {
+  text-align: center;
+  width: 100%;
+  font-size: 2.5em;
+  line-height: 2em;
+  margin-top: 3em;
+  color: hsla(343, 100%, 100%, 0.6);
+}
+
+.videoloop-hero {
   width: 100%;
 }
 
-h1 {
-  text-align: center;
+/* End of hero-styling */
+
+
+/* Start of Setion1:Story styling */
+.container-text {
+  margin: auto;
+  width: 70%;
+}
+/* End of Setion1:Story styling */
+
+
+/* Start of Setion2:Video styling */
+
+.nav-trailer {
+  /* border: 1px solid white; */
+  width: 80%;
+  margin: auto;
+  padding-top: 5em;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-trailer li {
+  display: flex;
+  align-items: center;   /*Centers Menu items*/
+}
+
+.nav-trailer a {
+  text-decoration: none;
+  color: hsla(343, 100%, 100%, 0.6);
+}
+
+.nav-trailer a:hover {
+  color: rgb(169, 151, 118);
+}
+
+.video-trailer {
+  width: 100%;
+}
+
+/* End of Setion2:Video styling */
+
+
+/* Start of Setion3:Gallery styling */
+
+.container-gallery {
+  display: grid;
+  grid-gap: 0.5em;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: 400px;
+  grid-auto-flow: dense;
+}
+.landscape {
+  grid-column: span 2;
+}
+.portrait {
+  grid-row: span 2;
+}
+.fit {
+  grid-row: span 1;
+  grid-column: span 1;
+}
+.container-gallery > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-gallery > div > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/* End of Setion3:Gallery styling */
+
+
+
+/* Start of text styling */
+
+p {
+  font-size: 1em;
+  line-height: 1.8em;
+  font-family: 'Fira Mono', monospace;
+  color: hsla(343, 100%, 100%, 0.7);
 }
