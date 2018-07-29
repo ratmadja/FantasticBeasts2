@@ -30,7 +30,7 @@ body {
 /* Start of nav-styling */
 
 nav {
-  /* border: 1px solid white; */
+  border: 1px solid white;
   background-color: hsla(343, 100%, 100%, 0);
   position: fixed;
   top: 0px;
@@ -39,25 +39,25 @@ nav {
   z-index: 1;
 
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-content: center;
+
 }
 
 .movie-logo {
-  /* border: 1px solid white; */
+  border: 1px solid white;
   width: 25%;
   height: 25%;
 }
 
 .nav-menu {
-  /* border: 1px solid white; */
+  border: 1px solid white;
+  width: 50%;
   display: flex;
+  flex-direction: row;
+
 }
 
 .nav-menu li {
-  display: flex;
-  align-items: center;   /*Centers Menu items*/
+  display: inline-block;
   margin: 0em 1em;
 }
 
@@ -129,9 +129,8 @@ nav {
   color: rgb(169, 151, 118);
 }
 
-.video-trailer {
-  width: 100%;
-}
+
+
 
 /* End of Setion2:Video styling */
 
