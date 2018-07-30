@@ -182,8 +182,6 @@ body {
   background-size: cover, cover;
   background-position: center, center;
 }
-
-
 .landscape-1 {
   grid-column: span 2;
   background-image: url(../assets/images/frame-landscape2.png),
@@ -215,8 +213,6 @@ body {
   background-position: center, center;
   background-repeat: no-repeat, no-repeat;
 }
-
-
 .landscape-gif1 {
   grid-column: span 2;
   background-image: url(../assets/images/frame-landscape.png),
@@ -254,6 +250,9 @@ body {
 }
 /* End of Gallery styling */
 
+.portrait {
+  display: none;
+}
 
 /* Start of CTA styling */
 
