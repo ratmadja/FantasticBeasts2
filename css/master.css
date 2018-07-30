@@ -44,7 +44,7 @@ body {
 
 .nav-logo {
   /* border: 1px solid white; */
-  width: 25%;
+  width: 20%;
 }
 
 .logo {
@@ -77,7 +77,11 @@ body {
 
 /* Start of hero-styling */
 .hero-content {
-  margin-top: 3%;
+
+}
+
+.video-hero {
+  width: 100%;
 }
 
 .section-title {
@@ -85,14 +89,14 @@ body {
   width: 100%;
   font-size: 2.5em;
   line-height: 2em;
-  margin-top: 2em;
+  margin-top: 4em;
   margin-bottom: 2em;
   color: hsla(343, 100%, 100%, 0.6);
 }
 
-.video-hero {
-  width: 100%;
-}
+
+
+
 
 /* End of hero-styling */
 
@@ -102,7 +106,7 @@ body {
 .container-text {
   margin: auto;
   width: 70%;
-  padding-top: 3em;
+  margin-bottom: 4em;
 }
 /* End of Setion1:Story styling */
 
@@ -112,7 +116,7 @@ body {
   /* border: 1px solid white; */
   width: 70%;
   margin: auto;
-  padding-top: 8em;
+  margin-top: 8em;
   padding-bottom: 4em;
   display: flex;
   justify-content: space-around;
@@ -145,20 +149,10 @@ body {
 .container-gallery {
   display: grid;
   margin: 0em 4em;
-  grid-gap: 1em;
+  grid-gap: 2em;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-auto-rows: 200px;
   grid-auto-flow: dense;
-}
-.landscape {
-  grid-column: span 2;
-}
-.portrait {
-  grid-row: span 2;
-}
-.fit {
-  grid-row: span 1;
-  grid-column: span 1;
 }
 .container-gallery > div {
     display: flex;
@@ -169,6 +163,94 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+
+.round-1 {
+  grid-row: span 1;
+  grid-column: span 1;
+  background-image: url(../assets/images/frame-round.png),
+                    url(../assets/images/square1.jpg);
+  background-size: cover, cover;
+  background-position: center, center;
+}
+.round-2 {
+  grid-row: span 1;
+  grid-column: span 1;
+  background-image: url(../assets/images/frame-round.png),
+                    url(../assets/images/square2.jpg);
+  background-size: cover, cover;
+  background-position: center, center;
+}
+
+
+.landscape-1 {
+  grid-column: span 2;
+  background-image: url(../assets/images/frame-landscape2.png),
+                    url(../assets/images/landscape1.jpg);
+  background-size: cover, cover;
+  background-position: center, center;
+}
+.portrait-2 {
+  grid-row: span 2;
+  background-image: url(../assets/images/frame-portrait2.png),
+                    url(../assets/images/portrait2.png);
+  background-size: cover, cover;
+  background-position: center, center;
+  background-repeat: no-repeat, no-repeat;
+}
+.portrait-3 {
+  grid-row: span 2;
+  background-image: url(../assets/images/frame-portrait2.png),
+                    url(../assets/images/portrait3.jpg);
+  background-size: cover, cover;
+  background-position: center, center;
+  background-repeat: no-repeat, no-repeat;
+}
+.portrait-1 {
+  grid-row: span 2;
+  background-image: url(../assets/images/frame-portrait2.png),
+                    url(../assets/images/portrait1.jpg);
+  background-size: cover, cover;
+  background-position: center, center;
+  background-repeat: no-repeat, no-repeat;
+}
+
+
+.landscape-gif1 {
+  grid-column: span 2;
+  background-image: url(../assets/images/frame-landscape.png),
+                    url(../assets/gif/one.gif);
+  background-size: cover, cover;
+  background-position: center, center;
+}
+.landscape-gif2 {
+  grid-column: span 2;
+  background-image: url(../assets/images/frame-landscape.png),
+                    url(../assets/gif/2.gif);
+  background-size: cover, cover;
+  background-position: center, center;
+}
+.landscape-gif6 {
+  grid-column: span 2;
+  background-image: url(../assets/images/frame-landscape.png),
+                    url(../assets/gif/6.gif);
+  background-size: cover, cover;
+  background-position: center, center;
+}
+.landscape-gif7 {
+  grid-column: span 2;
+  background-image: url(../assets/images/frame-landscape.png),
+                    url(../assets/gif/7.gif);
+  background-size: cover, cover;
+  background-position: center, center;
+}
+.portrait-gif5 {
+  grid-row: span 2;
+  background-image: url(../assets/images/frame-portrait.png),
+                    url(../assets/gif/five.gif);
+  background-size: cover, cover;
+  background-position: center, center;
 }
 /* End of Gallery styling */
 
@@ -186,33 +268,43 @@ body {
 }
 .cta-videoContainer {
   /* border: 1px solid red; */
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
 }
 .cta-button {
-  position: absolute;
-  bottom: 4em;
   background-color: hsla(360, 100%, 0%, 0.6);
-  margin: auto;
-  display: block;
-  margin: 0em 41%;
-  padding: 0.5em;
   color: hsla(343, 100%, 100%, 0.6);
-  border: 1px solid rgb(169, 151, 118);
+  margin-bottom: 3em;
 }
 .cta-button-text {
   font-family: 'Animales Fantastic';
-  font-size: 0.8em;
-  color: hsla(343, 100%, 100%, 0.6);
-  margin-bottom: 0;
+  font-size: 1em;
+  color: rgb(169, 151, 118);
+  margin: auto;
   text-align: center;
+  padding: 0.5em;
+  border: 1px solid rgb(169, 151, 118);
+  width: 250px;
 }
-.video-footer {
-  margin-left: 15%;
-  width: 70%;
+.video-cta {
+  margin-left: 20%;
+  width: 60%;
+}
+
+footer {
+  margin: auto;
+  width: 60%;
+  border-top: 1px solid rgb(169, 151, 118);
+  margin-top: 8em;
+  padding-top: 1em;
+}
+footer .container-text {
+  width: 100%;
 }
 
 /* Start of text styling */
-
 p {
   font-size: 1em;
   line-height: 1.8em;
